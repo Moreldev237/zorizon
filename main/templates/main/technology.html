@@ -1,0 +1,69 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container py-5">
+    <!-- Technology Process -->
+    
+    <!-- Solutions Section -->
+    <section class="solutions" id="solutions">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos processus technologique</h2>
+                <p>Des approches innovantes pour résoudre la crise des déchets plastiques et énergétique.</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Transformation plastique → carburant</h3>
+                    <p>Conversion des déchets plastiques en carburant propre grâce à notre technologie brevetée de pyrolyse.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3>Réduction pollution & empreinte carbone</h3>
+                    <p>Diminution significative de la pollution plastique et des émissions de CO₂ grâce à notre procédé propre.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Innovation énergétique locale</h3>
+                    <p>Production de carburant local, réduisant la dépendance aux importations et créant de l'emploi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <div class="row">
+        <div class="col-12 text-center mb-4">
+            <h2 class="text-primary-green">Nos Partenaires</h2>
+        </div>
+       
+            <div class="d-flex justify-content-center flex-wrap gap-4">
+               
+                <div class="text-center">
+                    <img src="{% static 'images/image1.jpg' %}" alt=" Immob Partner" class="img-fluid mb-2" style="max-width: 300px;">
+                    <h3 class="text-primary-danger">Immob Partner</h3>
+                </div>
+
+                <div> </div>
+                <div> </div>
+                <div> </div>
+                <div> </div>
+
+                <div class="text-center">
+                    <img src="{% static 'images/image2.jpg' %}" alt=" Multivers partner" class="img-fluid mb-2" style="max-width: 300px;">
+                    <h3 class="text-primary-danger">Multivers partner</h3>
+
+                </div>
+                
+            </div>
+    </div>
+</div>
+{% endblock %}
